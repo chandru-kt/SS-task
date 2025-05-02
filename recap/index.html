@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Login with reCAPTCHA</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <h2>Login Page with reCAPTCHA</h2>
+    <form id="loginForm" action="/verify" method="POST">
+      <label>User ID:</label><br>
+      <input type="text" name="userid" required><br><br>
+
+      <label>Password:</label><br>
+      <input type="password" name="password" required><br><br>
+
+      <div class="g-recaptcha" data-sitekey="6LfyISkrAAAAAMoGuVYyeKFvrc3K521uOI05YQV1"></div><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <h2>Login Form with reCAPTCHA</h2>
+    <form action="/verify" method="POST">
+        <label for="userid">User ID:</label><br>
+        <input type="text" id="userid" name="userid" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <div class="g-recaptcha" data-sitekey="6LfyISkrAAAAAMoGuVYyeKFvrc3K521uOI05YQV1"></div><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
